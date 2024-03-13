@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="16dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/fNameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/fName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginStart="6dp"
+                android:text="First Name : "
+                android:textColor="#B8B"
+                android:textSize="24sp"
+                />
+            <TextView
+                android:id="@+id/firstName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginStart="6dp"
+                android:hint="First Name  "
+                android:singleLine="true"
+                android:textColor="#B8B"
+                android:textSize="24sp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lNameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/fNameLayout"
+            android:padding="8dp">
+            <TextView
+                android:id="@+id/lName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginStart="6dp"
+                android:text="Last Name : "
+                android:textColor="#B8B"
+                android:textSize="24sp"
+                />
+            <TextView
+                android:id="@+id/lastName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginStart="6dp"
+                android:singleLine="true"
+                android:hint="Last Name  "
+                android:textColor="#B8B"
+                android:textSize="24sp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/emailIdLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/lNameLayout"
+            android:padding="8dp">
+            <TextView
+                android:id="@+id/emailId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:text="email id : "
+                android:textColor="#B8B1"
+                android:textSize="28sp"
+                />
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:hint="email id  "
+                android:singleLine="true"
+                android:textColor="#B8B1"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/mNumberLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/emailId"
+            android:padding="8dp"
+            >
+            <TextView
+                android:id="@+id/mNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginStart="6dp"
+                android:text="Mobile Number : "
+                android:textColor="#B8B"
+                android:textSize="24sp"
+                />
+            <TextView
+                android:id="@+id/mobileNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginStart="6dp"
+                android:hint="Mobile Number  "
+                android:textColor="#B8B"
+                android:singleLine="true"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

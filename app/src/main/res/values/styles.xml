@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SplashTheme" parent="Base.Theme.MaterialComponents.Light.DarkActionBar.Bridge">
+
+        <item name="android:windowBackground">@layout/activity_splashdisplay</item>
+    </style>
+</resources>

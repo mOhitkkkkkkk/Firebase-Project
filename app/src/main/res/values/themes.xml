@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ImpetrosysDev" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:windowBackground">@drawable/mainbackground</item>
+<item name="android:windowIsTranslucent">true</item>
+    </style>
+<!--    <style name="Base.Theme.ImpetrosysDevl" parent="Base.Theme.MaterialComponents.Light.DarkActionBar.Bridge">-->
+<!--        &lt;!&ndash; Customize your light theme here. &ndash;&gt;-->
+<!--        &lt;!&ndash; <item name="colorPrimary">@color/my_light_primary</item> &ndash;&gt;-->
+<!--        <item name="android:windowIsTranslucent">true</item>-->
+<!--    </style>-->
+    <style name="Theme.ImpetrosysDevregister" parent="Base.Theme.ImpetrosysDev" />
+</resources>

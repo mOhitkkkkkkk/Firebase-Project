@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "222604768307",
+    "project_id": "impetrosysdev",
+    "storage_bucket": "impetrosysdev.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:222604768307:android:2336fa6ae92e4236871f46",
+        "android_client_info": {
+          "package_name": "com.example.impetrosysdev"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxJ3uUW3fD9p1YmrFvTZ73Kv-YnHD5Fro"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

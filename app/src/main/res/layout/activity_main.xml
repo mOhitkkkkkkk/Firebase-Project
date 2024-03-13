@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/mainbackground"
+    tools:context=".Activity.StartActivity">
+    <LinearLayout
+        android:id="@+id/userDetailsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:text="@string/my_profile"
+            android:gravity="center"
+            android:textColor="#F7050503"
+            android:textSize="24sp"
+            android:layout_weight="1"
+        />
+
+        <TextView
+            android:id="@+id/userProfiles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="@string/users_profile"
+            android:textColor="#F7050503"
+            android:textSize="24sp"
+            android:layout_weight="1"
+         />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/user_details"
+        android:layout_below="@+id/userDetailsLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="16dp"
+        android:text="Hello User!"
+        android:textColor="#B83232"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/userDetailsCardView"
+        android:layout_below="@id/user_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginVertical="8dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/fNameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+    <TextView
+        android:id="@+id/fName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="6dp"
+        android:text="First Name : "
+        android:textColor="#B8B"
+        android:textSize="24sp"
+        />
+        <TextView
+            android:id="@+id/firstName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="6dp"
+            android:hint="First Name  "
+            android:singleLine="true"
+            android:textColor="#B8B"
+            android:textSize="24sp"
+            />
+    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lNameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/fNameLayout"
+            android:padding="8dp">
+        <TextView
+            android:id="@+id/lName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="6dp"
+            android:text="Last Name : "
+            android:textColor="#B8B"
+            android:textSize="24sp"
+            />
+        <TextView
+            android:id="@+id/lastName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="6dp"
+            android:singleLine="true"
+            android:hint="Last Name  "
+            android:textColor="#B8B"
+            android:textSize="24sp"
+            />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/emailIdLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/lNameLayout"
+            android:padding="8dp">
+    <TextView
+        android:id="@+id/emailId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:text="email id : "
+        android:textColor="#B8B1"
+        android:textSize="28sp"
+        />
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:hint="email id  "
+            android:singleLine="true"
+            android:textColor="#B8B1"
+            />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/mNumberLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/emailId"
+            android:padding="8dp"
+            >
+        <TextView
+            android:id="@+id/mNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="6dp"
+            android:text="Mobile Number : "
+            android:textColor="#B8B"
+            android:textSize="24sp"
+            />
+        <TextView
+            android:id="@+id/mobileNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="6dp"
+            android:hint="Mobile Number  "
+            android:textColor="#B8B"
+            android:singleLine="true"
+            />
+        </LinearLayout>
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:id="@+id/logOut"
+        android:layout_gravity="bottom"
+       android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/logout" />
+    <Button
+        android:id="@+id/updatePassword"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Update Password"
+        android:onClick="showUpdatePasswordDialog" />
+
+</RelativeLayout>
